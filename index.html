@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey form</title>
+    <link href="/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id='page'>
+      <header>
+        <h1 id='title'>What is the worst superhero movie?</h1>
+        <p id='description'>Let us know which superhero film you think is the most unenjoyable</p>
+      </header>
+      <form id='survey-form' action='/send' method='POST'>
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label id='name-label' class='label' for='name'>* Full Name: </label>
+          <input id='name' class='type-box' type='text' name='fullName' placeholder='Enter your full name' required>
+          <label id='email-label' class='label' for='email'>* Email: </label>
+          <input id='email' class='type-box' type='email' name='email' placeholder='Enter your email address' required>
+          <label id='number-label' class='label' for='number'>Age: </label>
+          <input id='number' class='type-box' type='number' name='age' min='5' max='120' placeholder='Enter your age (5-120)'>
+          <label id='dropdown-label' class='label' for='dropdown'>Occupation:</label>
+          <select id='dropdown'>
+            <option value='fulltime'>Employed full-time</option>
+            <option value='parttime'>Employed part-time</option>
+            <option value='unemployed'>Unemployed</option>
+            <option value='student'>Student</option>
+            <option value='statusunknown'>Don't want to say</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Worst films shortlist:</legend>
+          <label for='Catwoman' class='label'><input id='Catwoman' value='Catwoman' type='radio' name='film'>Catwoman</label>
+          <label for='Batman & Robin' class='label2'><input id='Batman & Robin' value='Batman & Robin' type='radio' name='film'>Batman & Robin</label>
+          <label for='Elektra' class='label'><input id='Elektra' value='Elektra' type='radio' name='film'>Elektra</label>
+          <label for='Superman IV: The Quest for Peace' class='label2'><input id='Superman IV: The Quest for Peace' value='Superman IV: The Quest for Peace' type='radio' name='film'>Superman IV</label>
+          <label for='Barb Wire' class='label'><input id='Barb Wire' value='Barb Wire' type='radio' name='film'>Barb Wire</label>
+          <label for='Supergirl' class='label2'><input id='Supergirl' value='Supergirl' type='radio' name='film'>Supergirl</label>
+          <label for='The Last Airbender' class='label'><input id='The Last Airbender' value='The Last Airbender' type='radio' name='film'>The Last Airbender</label>
+          <label for='Ghost Rider: Spirit of Vengeance' class='label2'><input id='Ghost Rider: Spirit of Vengeance' value='Ghost Rider: Spirit of Vengeance' type='radio' name='film'>Ghost Rider: SOV</label>
+          <label for='Superhero Movie' class='label'><input id='Superhero Movie' value='Superhero Movie' type='radio' name='film'>Superhero Movie</label>
+          <label for='Steel' class='label2'><input id='Steel' value='Steel' type='radio' name='film'>Steel</label>
+        </fieldset>
+        <fieldset>
+          <legend>Formats I've seen the film on:</legend>
+          <label for='VHS' class='label'><input id='VHS' value='VHS' type='checkbox' name='media'>VHS</label>
+          <label for='DVD' class='label2'><input id='DVD' value='DVD' type='checkbox' name='media'>DVD</label>
+          <label for='Blue-ray' class='label'><input id='Blue-ray' value='Blue-ray' type='checkbox' name='media'>Blue-ray</label>
+          <label for='Movie theatre' class='label2'><input id='Movie theatre' value='Movie theatre' type='checkbox' name='media'>Movie theatre</label>
+        </fieldset>
+        <fieldset id='unlisted'>
+          <legend>If the film is not mentioned above, enter it below:</legend>
+          <textarea placeholder='Enter unlisted film here with format' name='otherfilms'></textarea>
+        </fieldset>
+        <button id='submit' type='submit'>Submit</button>
+      </form>
+    </div>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  </body>
+</html>

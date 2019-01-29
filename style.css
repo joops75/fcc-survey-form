@@ -1,0 +1,66 @@
+body {
+  text-align: center;
+}
+body, input, select, button {
+  font-family: dotum;
+}
+#page {
+  background: rgb(204, 255, 255);
+  width: 84vw;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 10px 20px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+header {
+  font-weight: bold;
+}
+legend {
+  font-weight: bold;
+}
+.type-box {
+  width: 144px;
+  margin: auto;
+}
+select {
+  width: 150px;
+  margin: auto;
+}
+fieldset {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+  margin-bottom: 10px;
+}
+textarea {
+  width: 70vw;
+  margin: auto;
+}
+@media (min-width: 450px) {
+  fieldset {
+    grid-template-columns: 1fr 1fr;
+    width: 350px;
+  }
+  #unlisted {
+    grid-template-columns: 1fr;
+  }
+  .label {
+    text-align: right;
+    margin-right: 5px;
+  }
+  .type-box, select {
+    margin: 0;
+  }
+  .label2 {
+    text-align: left;
+  }
+  textarea {
+    width: 200px;
+  }
+}
+@media (min-width: 700px) {
+  #page {
+    width: 600px;
+  }
+}
